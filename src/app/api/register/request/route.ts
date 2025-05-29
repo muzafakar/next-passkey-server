@@ -6,7 +6,8 @@ function encodeUserId(id: string): Uint8Array {
 }
 
 export async function POST(request: Request) {
-    const username = await request.json()
+    const body = await request.json()
+    const {username} = body
     try {
         const userPasskeys = Credentials.findByUserName(username);
 
