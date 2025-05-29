@@ -13,7 +13,7 @@ export async function POST(request: Request) {
 
         const option = await generateRegistrationOptions({
             rpName: "learn-passkey-zulfakar",
-            rpID: "next-passkey-server.vercel.app",
+            rpID: "passkeys-codelab.glitch.me",
             userID: encodeUserId(username),
             userName: username,
             userDisplayName: username || '',
