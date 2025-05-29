@@ -12,7 +12,7 @@ export async function POST(request: Request) {
 
         const option = await generateRegistrationOptions({
             rpName: "learn-passkey-zulfakar",
-            rpID: "0f5a-114-10-101-165.ngrok-free.app",
+            rpID: "next-passkey-server.vercel.app",
             userID: encodeUserId(username),
             userName: username,
             userDisplayName: username || '',
