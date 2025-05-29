@@ -17,7 +17,6 @@ export async function POST(request: Request) {
             userID: encodeUserId(username),
             userName: username,
             userDisplayName: username || '',
-            attestationType: 'none',
             excludeCredentials: userPasskeys.map(passkey => ({
                 id: passkey.id,
                 type: 'public-key',
@@ -25,7 +24,8 @@ export async function POST(request: Request) {
             })),
             authenticatorSelection: {
                 authenticatorAttachment: 'platform',
-                requireResidentKey: true
+                requireResidentKey: true,
+                residentKey: 'required'
             },
         })
 
