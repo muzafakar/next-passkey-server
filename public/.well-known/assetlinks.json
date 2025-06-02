@@ -5,11 +5,8 @@
       "delegate_permission/common.get_login_creds"
     ],
     "target": {
-      "namespace": "android_app",
-      "package_name": "com.mzfkr.learnpasskey",
-      "sha256_cert_fingerprints": [
-        "1C:8B:0C:BD:CF:F2:88:BA:B2:D1:03:C2:28:B5:51:17:C0:C2:0C:64:62:28:EB:DF:CF:E0:67:8A:2A:A2:31:C1"
-      ]
+      "namespace": "web",
+      "site": "https://next-passkey-server.vercel.app"
     }
   },
   {
@@ -18,8 +15,12 @@
       "delegate_permission/common.get_login_creds"
     ],
     "target": {
-      "namespace": "web",
-      "site": "https://next-passkey-server.vercel.app"
+      "namespace": "android_app",
+      "package_name": "com.mzfkr.learnpasskey",
+      "sha256_cert_fingerprints": [
+        "1C:8B:0C:BD:CF:F2:88:BA:B2:D1:03:C2:28:B5:51:17:C0:C2:0C:64:62:28:EB:DF:CF:E0:67:8A:2A:A2:31:C1",
+        "8D:2A:2C:A6:11:02:B8:5F:9C:79:C9:2A:91:BD:ED:70:39:A1:62:C9:74:B0:D8:BF:A6:C3:35:B4:C0:ED:89:13"
+      ]
     }
   },
   {
