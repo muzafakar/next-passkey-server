@@ -13,18 +13,11 @@ export async function POST(request: Request) {
 
         const option = await generateRegistrationOptions({
             rpName: "learn-passkey-zulfakar",
-            rpID: "passkeys-codelab.glitch.me",
-            userID: encodeUserId(username),
+            rpID: "next-passkey-server.vercel.app",
             userName: username,
             userDisplayName: username || '',
-            excludeCredentials: userPasskeys.map(passkey => ({
-                id: passkey.id,
-                type: 'public-key',
-                transports: passkey.transports
-            })),
             authenticatorSelection: {
                 authenticatorAttachment: 'platform',
-                requireResidentKey: true,
                 residentKey: 'required'
             },
         })
